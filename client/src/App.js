@@ -11,26 +11,19 @@ import Resources from "./Resources/Resources"
 import Leaderboard from "./Leaderboard/Leaderboard"
 import Roadmap from "./Roadmap/Roadmap"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Container, Typography, Grow, Grid } from "@material-ui/core";
-import useStyles from "./Styles";
+
 
 function App() {
   const [user, setLoginUser] = useState({});
-  const classes = useStyles();
+  
   return (
-    // const [logedIn, setLogedIn] = useState(false);
-    <Container className={classes.container} >
-      
-      {/* <Discuss /> */}
-      <div className={classes.main}>
+    <>
+      <div >
         <Router>
          <Navbar logedIn = {true}/>
           <Switch>
            <Redirect exact from="/" to="/homepage" />
             <Route exact path="/homepage">
-              {/* {
-              user && user._id ? <Homepage setLoginUser={setLoginUser} /> : <Login setLoginUser={setLoginUser}/>
-            } */}
               <Homepage />
             </Route>
             <Route path="/discuss">
@@ -58,7 +51,7 @@ function App() {
         </Router>
       </div>
       <Footer />
-    </Container>
+    </>
   );
 }
 

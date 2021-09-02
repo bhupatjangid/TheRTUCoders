@@ -5,9 +5,9 @@ import styled from 'styled-components';
 export const Nav = styled.nav`
 background: black;
 height: 80px;
+width: 100%;
 display: flex;
 justify-content: space-between;
-padding: 0px 10px;
 z-index: 12;
 /* Third Nav */
 /* justify-content: flex-start; */
@@ -43,11 +43,6 @@ color: #808080;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
-/* Second Nav */
-/* margin-right: 24px; */
-/* Third Nav */
-/* width: 100vw;
-white-space: nowrap; */
 @media screen and (max-width: 768px) {
 	display: none;
 }
