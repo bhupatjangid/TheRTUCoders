@@ -17,9 +17,7 @@ const UserSchema = new mongoose.Schema({
     
 })
 const User = mongoose.model('User',UserSchema);
-app.get("/",function(req,res){
-    res.send("Hello");
-})
+
 
 
 app.post("/login", (req, res)=> {
