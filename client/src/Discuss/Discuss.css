@@ -1,67 +1,5 @@
-.page-container{
-    background-color: rgba(128, 128, 128, 0.315);
-    height:100vh;;
-    margin-top: -20px;
-    scroll-behavior: smooth;
-    overflow:auto;
-  }
-  .html{
-    overflow :hidden;
-  }
-  .btn-container{
-    display: flex;
-    justify-content: space-around;
-    min-height: 200px;
-    min-width: 200px;
-    
-    padding: 20px;
-  }
-  .card{
-    border-radius: 5px;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    font-size: 16px;
-    color: white;
-    border: 2px solid white;
-  }
-  .card:hover{
-    box-shadow: 5px 5px 5px 5px rgb(135, 228, 235);
-  }
-  .exp{
-    padding-top :70px;
-    background-color:#080808;
-    
-  }
-  .career{
-    padding-top :80px;
-    background-color: hsl(360, 68%, 60%) !important;
-    
-  }
-  .discuss{
-   padding-top :70px;
-   background-color: #24a0ed;
-  }
-  .feedb  {
-    padding-top :80px;
-    background-color: #fd0e35;
-  }
-  
-  .card-heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    padding-left: 20px;
-    min-height: 20px;
-    margin-top: 0px;
-    margin-left: 10px;
-    margin-bottom: 2px;
-    margin-right: 10px;
-    border-radius: 3px;
-    font-size: 18px;
-  }
+
+@media only screen and (min-width:700px){
   .w3-circle{
       margin: 1px;
       margin-right: 50px;  
@@ -75,7 +13,7 @@
     
   }
   .post{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.541);
     padding: 10px;
     margin-top: 0px;
     margin-left: 10px;
@@ -89,17 +27,91 @@
   .post-heading{
     display: flex;
     justify-content: left;
+    align-items: center;
+    align-content: center;
     padding-left:5px;
   }
-  .post-title{
+  .Experience{
+      font-size: 40px;
       margin-left: 20px;
-      padding-left: 20px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      font-family: 'Baloo Da 2', cursive;
       color: black;
   }
   .post-top{
     display: flex;
     justify-content:space-between;
   }
+  .post-title{
+    font-size: 20px;
+    align-items: centre;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: black;
+  }
   .post-date{
     margin-right:80px ;
   }
+  .post-body{
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width:700px){
+  .w3-circle{
+      margin: 1px;
+      margin-right: 50px;  
+  }
+  
+  .posts{
+    height:max-content;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .post{
+    background-color: rgba(255, 255, 255, 0.541);
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    max-height: 105px;
+    word-break: break-all;
+  }
+ 
+  .post-heading{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    padding-left:5px;
+  }
+  .Experience{
+    font-size: 30px;
+      margin-left: 10px;
+      margin-top: 5px;
+      margin-bottom: 2px;
+      font-family: 'Baloo Da 2', cursive;
+      color: black;
+  }
+  .post-top{
+    display: flex;
+    justify-content:space-between;
+  }
+  .post-title{
+    font-size: 20px;
+    align-items: centre;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: black;
+  }
+  .post-date{
+   display: none;
+  }
+  .post-body{
+    margin-left: 20px;
+  }
+}

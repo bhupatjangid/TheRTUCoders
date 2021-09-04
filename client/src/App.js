@@ -11,29 +11,38 @@ import Resources from "./Resources/Resources"
 import Leaderboard from "./Leaderboard/Leaderboard"
 import Roadmap from "./Roadmap/Roadmap"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import { Container, Typography, Grow, Grid } from "@material-ui/core";
+import useStyles from "./Styles";
 
 function App() {
   const [user, setLoginUser] = useState({});
-  
+  const [logedIn, setLogedIn] = useState(false)
+  const classes = useStyles();
   return (
-    <>
-      <div >
+    // const [logedIn, setLogedIn] = useState(false);
+    <Container className={classes.container} >
+      
+      {/* <Discuss /> */}
+      <div className={classes.main}>
         <Router>
-         <Navbar logedIn = {true}/>
+         <Navbar logedIn = {logedIn}/>
           <Switch>
            <Redirect exact from="/" to="/homepage" />
             <Route exact path="/homepage">
+              {/* {
+              user && user._id ? <Homepage setLoginUser={setLoginUser} /> : <Login setLoginUser={setLoginUser}/>
+            } */}
               <Homepage />
             </Route>
             <Route path="/discuss">
               <Discuss />
             </Route>
             <Route path="/profile">
-              <Profile />
+              {/* {console.log(user)} */}
+              <Profile user={user}/>
             </Route>
             <Route path="/login">
-              <Login setLoginUser={setLoginUser} />
+              <Login setLoginUser={setLoginUser} setLogedIn={setLogedIn}/>
             </Route>
             <Route path="/register">
               <Register />
@@ -51,7 +60,7 @@ function App() {
         </Router>
       </div>
       <Footer />
-    </>
+    </Container>
   );
 }
 

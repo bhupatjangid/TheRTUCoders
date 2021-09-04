@@ -5,6 +5,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import "./FooterStyles.css"
 import MailIcon from '@material-ui/icons/Mail';
 import {
   FaFacebook,
@@ -42,7 +43,7 @@ const Footer = () => {
     }
   }
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} style = {{width:'100vw',bottom: 0}}>
       <Table  aria-label="simple table">
         
         <TableBody  style={{backgroundColor:"black"}}>
@@ -130,6 +131,5 @@ const Footer = () => {
   );
 };
 export default Footer;
-
 
 

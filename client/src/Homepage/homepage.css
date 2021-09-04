@@ -1,15 +1,17 @@
-@media only screen and (min-width:700px){
+@media only screen and (min-width:800px){
     .homepageContent{
 
-        width: 100%;
-        
-        background-image: linear-gradient(to bottom, #98fab0, #f8f8f8, #f3f7f6, #ffffff);
+        width: 100vw;
+        padding-left: 10px;
+        padding-right:10px;
+        background-image: linear-gradient(to bottom, #98fab6, #f8f8f8, #f3f7f6, #ffffff, #ffffff);
     
     }
     .aboutUsHeading{
         align-items:center;
+        /* color: black; */
         align-content: center;
-        
+        margin-top: -20px;
     
     }
     .aboutUs{
@@ -21,10 +23,24 @@
     }
     .content{
         display: flex;
-       
+        margin: 40px;
         justify-content: space-between;
         align-items: stretch;
     }
+    .content-left{
+        font-family: 'Baloo Da 2', cursive;;
+        text-align: justify;
+        text-justify: inter-word;
+        width: 40%;
+        
+    }
+    .content-right{
+        width:30%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
     .discord-img{
         margin: 50px;
         margin-top: 60px;
@@ -38,10 +54,12 @@
     }
 }
 
-@media only screen and (min-width:320px){
+@media only screen and (min-width:0px){
     .homepageContent{
 
-        width: 100%;
+        width: 100vw;
+        padding-left: 10px;
+        padding-right:10px;
         background-image: linear-gradient(to bottom, #98fab6, #f8f8f8, #f3f7f6, #ffffff, #ffffff);
     
     }
@@ -57,7 +75,7 @@
         color: red;
         font-family: 'Arvo', serif;
         align-content: center;
-        
+        margin: 10px;
         /* align-items: center; */
     }
     .content{
@@ -84,9 +102,9 @@
     
     .discord-img{
         margin-top: 60px;
-        width: 40vh;
-        height: 40vh;
-        border-radius: 40px;
+        width: 20vh;
+        height: 20vh;
+        border-radius: 20px;
     
     }
     .heading{
