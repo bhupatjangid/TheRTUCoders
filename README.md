@@ -13,7 +13,7 @@ some logics are currently in development.
 
 #### Example:  
 
-Clone down master branch repository. You will need `node` and `npm` installed globally on your machine.  
+Clone down 'https://github.com/bhupatjangid/TheRTUCoders/tree/master' repository. You will need `node` and `npm` installed globally on your machine.  
 
 Installation:
 
