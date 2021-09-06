@@ -13,7 +13,7 @@ some logics are currently in development.
 
 #### Example:  
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
+Clone down master branch repository. You will need `node` and `npm` installed globally on your machine.  
 
 Installation:
 
